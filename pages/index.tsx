@@ -44,7 +44,7 @@ export default function Home({ data }: HomeProps) {
       />
 
       <main className="relative z-10 mx-6 max-w-[60%] text-center font-timesdot  bg-[color:var(--card)] p-10 animate-[rise_1.2s_ease_both] sm:p-14">
-        <h1 className="mb-6 text-5xl leading-tight drop-shadow-[0_0_28px_rgba(249,199,132,0.55)] [text-shadow:0_0_24px_rgba(249,199,132,0.45)]">
+        <h1 className="mb-6 text-3xl leading-tight drop-shadow-[0_0_28px_rgba(249,199,132,0.55)] [text-shadow:0_0_24px_rgba(249,199,132,0.45)]">
           {data.name}
         </h1>
         <div className="mb-6 inline-flex items-center gap-3 text-3xl uppercase tracking-[0.3em]">
@@ -52,7 +52,7 @@ export default function Home({ data }: HomeProps) {
           <span aria-hidden="true">•</span> */}
           <span className='font-hieroglyphs'>{data.symbol}</span>
         </div>
-        <div className="space-y-5 text-5xl leading-[1.1] text-[color:var(--muted)] drop-shadow-[0_0_28px_rgba(249,199,132,0.55)] [text-shadow:0_0_24px_rgba(249,199,132,0.45)]">
+        <div className="space-y-5 text-3xl leading-[1.1] text-[color:var(--muted)] drop-shadow-[0_0_28px_rgba(249,199,132,0.55)] [text-shadow:0_0_24px_rgba(249,199,132,0.45)]">
           {data.paragraphs.map((paragraph) => (
             <p
               key={paragraph}
