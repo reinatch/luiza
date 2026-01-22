@@ -43,7 +43,7 @@ export default function Home({ data }: HomeProps) {
         aria-hidden="true"
       />
 
-      <main className="relative z-10 mx-6 max-w-[60%] text-center font-timesdot  bg-[color:var(--card)] p-10 animate-[rise_1.2s_ease_both] sm:p-14">
+      <main className="relative z-10 mx-6 max-w-[60%] text-center font-timesdot p-10 animate-[rise_1.2s_ease_both] sm:p-14">
         <h1 className="mb-6 text-3xl leading-tight drop-shadow-[0_0_28px_#F8B8E08C] [text-shadow:0_0_24px_#F8B8E073]">
           {data.name}
         </h1>
