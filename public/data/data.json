@@ -1,16 +1,19 @@
 {
   "name": "Luísa Martelo",
-  "symbol": "¢",
+  "symbol": "𓁘",
   "tagline": "Multi-disciplinary designer",
   "paragraphs": [
     "Luísa is a multi-disciplinary designer actively seeking ways of directing design towards the earth and social justice.",
-    "Specialised in editorial and book design at Central Saint Martins London (2014), her work departs from a simple principle—form organically arises from its unique context. Work departs from inquisitive research, intuition and close relationship to clients and institutions in search for visual cues, details, and stories that can be woven into honest and unique visual narratives that endure time.",
-    "Love for the natural world guides her investigative practice, intersecting design with her passions for tree and plant teachers. Parallel outputs include Community Herbalism at <a href=\"https://example.com/apoteca-comunitaria\" target=\"_blank\" rel=\"noreferrer\">Apoteca Comunitária</a>, a communal apothecary in the shared studio <a href=\"https://example.com/pedreira\" target=\"_blank\" rel=\"noreferrer\">Pedreira</a> and divination, a practice since her teens. Her work is in service to the earth."
+    "Specialised in editorial and book design at Central Saint Martins London (2014), her work  departs from a simple principle—form organically arises from its unique context. Work departs from inquisitive research, intuition and close relationship to clients and institutions in search for visual cues, details, and stories that can be woven into honest and unique visual narratives that endure time. ",
+    "Love for the natural world guides her investigative practice, intersecting design with her passions for tree and plant teachers. Parallel outputs include Community Herbalism at <a href='https://www.instagram.com/material_realm/' target=\"_blank\" rel=\"noreferrer\">Apoteca Comunitária</a>, a communal apothecary in the shared studio Pedreira. Her work is in service to the earth."
   ],
   "note": "this web is under construction",
   "cta": "Reach out with your brave ideas:",
   "socials": [
-    { "label": "Email", "href": "mailto:hello@example.com" },
-    { "label": "IG", "href": "https://instagram.com/your-handle" }
+    { "label": "Email", "href": "mailto:luizamartelo@gmail.com" },
+    { "label": "IG", "href": "https://instagram.com/luisamartelo" }
   ]
 }
+
+
+
