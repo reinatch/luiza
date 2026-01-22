@@ -62,19 +62,19 @@ export default function Home({ data }: HomeProps) {
           ))}
         </div>
 
-        <div className="mt-8 text-3xl  tracking-[0.22em] drop-shadow-[0_0_28px_#F8B8E08C] [text-shadow:0_0_24px_#F8B8E073]">
+        <div className="mt-6 text-[1.5em]  tracking-[0.22em] drop-shadow-[0_0_28px_#F8B8E08C] [text-shadow:0_0_24px_#F8B8E073]">
           * {data.note} *
         </div>
-        <p className="mt-6 text-3xl text-[color:var(--muted)]">{data.cta}</p>
+        <p className="mt-0 text-[1.5em] text-[color:var(--muted)]">{data.cta}</p>
 
-        <div className="mt-4 flex flex-wrap gap-3 max-sm:flex-col max-sm:items-start justify-center">
+        <div className="mt-0 flex flex-wrap gap-3 max-sm:flex-col max-sm:items-start justify-center">
           {data.socials.map((item) => (
             <a
               key={item.label}
               href={item.href}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2 text-3xl no-underline transition duration-200 hover:-translate-y-0.5 hover:text-[color:var(--ink)] hover:border-[rgba(249,199,132,0.8)] hover:bg-[rgba(249,199,132,0.12)]"
+              className="inline-flex items-center gap-2 px-4 py-2 text-[1.5em] no-underline transition duration-200 hover:-translate-y-0.5 hover:text-[color:var(--ink)] hover:border-[rgba(249,199,132,0.8)] hover:bg-[rgba(249,199,132,0.12)]"
             >
               {item.label}
             </a>
