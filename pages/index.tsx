@@ -44,13 +44,13 @@ export default function Home({ data }: HomeProps) {
       />
 
       <main className="relative z-10 max-w-[var(--content-max)] text-center font-timesdot p-10 animate-[rise_1.2s_ease_both] md:p-28 drop-shadow-[var(--text-drop-shadow)] [text-shadow:var(--text-shadow)]">
-        <h1 className="mb-2 text-[length:var(--fs-title)] leading-tight drop-shadow-[var(--text-drop-shadow)] [text-shadow:var(--text-shadow)]">
+        <h1 className="mb-2 text-[length:var(--fs-title)] text-[var(--text)]  leading-tight drop-shadow-[var(--text-drop-shadow)] [text-shadow:var(--text-shadow)]">
           {data.name}
         </h1>
         <div className="mb-2 inline-flex items-center gap-3 text-[length:var(--fs-symbol)] uppercase tracking-[0.3em]">
           {/* <span>{data.tagline}</span>
           <span aria-hidden="true">•</span> */}
-          <span className="font-hieroglyphs">{data.symbol}</span>
+          <span className="font-hieroglyphs drop-shadow-[var(--text-drop-shadow)] [text-shadow:var(--text-shadow)]">{data.symbol}</span>
         </div>
         <div className="space-y-5 text-[length:var(--fs-body)] leading-[1.25] text-[color:var(--text)] drop-shadow-[var(--text-drop-shadow)] [text-shadow:var(--text-shadow)]">
           {data.paragraphs.map((paragraph) => (
