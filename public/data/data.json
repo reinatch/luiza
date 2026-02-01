@@ -10,10 +10,9 @@
   "note": "this web is under construction",
   "cta": "Reach out with your brave ideas:",
   "socials": [
-    { "label": "Email", "href": "mailto:luizamartelo@gmail.com" },
-    { "label": "IG", "href": "https://instagram.com/luisamartelo" }
+    { "label": "email", "href": "mailto:luizamartelo@gmail.com" },
+    { "label": "ig", "href": "https://instagram.com/luisamartelo" }
   ]
 }
-
 
 

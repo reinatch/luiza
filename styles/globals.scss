@@ -29,12 +29,21 @@
 :root {
   --ink: #e8e2d7;
   --muted: #c9c0b1;
+  --text: #ffffff;
   --accent: #00ff00;
   --bg-deep: #0f1117;
   --bg-mid: #20222b;
   --card: rgba(12, 12, 16, 0.55);
-  --shadow: rgba(5, 6, 10, 0.6);
-  --glow: #f8b8e0;
+  --shadow: rgba(248, 184, 224, 0.45);
+  --drop: rgba(248, 184, 224, 0.55);
+  --text-shadow: 0 0 4px var(--shadow);
+  --text-drop-shadow: 0 0 8px var(--drop);
+
+  --fs-title: 1.65rem;
+  --fs-symbol: 2rem;
+  --fs-body: 1.5rem;
+  --fs-note: 1.5rem;
+  --content-max: 120ch;
 }
 
 html,

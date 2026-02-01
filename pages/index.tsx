@@ -43,41 +43,50 @@ export default function Home({ data }: HomeProps) {
         aria-hidden="true"
       />
 
-      <main className="relative z-10 mx-6 max-w-[60%] text-center font-timesdot p-10 animate-[rise_1.2s_ease_both] sm:p-14">
-        <h1 className="mb-6 text-3xl leading-tight drop-shadow-[0_0_28px_#F8B8E08C] [text-shadow:0_0_24px_#F8B8E073]">
+      <main className="relative z-10 max-w-[var(--content-max)] text-center font-timesdot p-10 animate-[rise_1.2s_ease_both] md:p-28 drop-shadow-[var(--text-drop-shadow)] [text-shadow:var(--text-shadow)]">
+        <h1 className="mb-2 text-[length:var(--fs-title)] leading-tight drop-shadow-[var(--text-drop-shadow)] [text-shadow:var(--text-shadow)]">
           {data.name}
         </h1>
-        <div className="mb-6 inline-flex items-center gap-3 text-3xl uppercase tracking-[0.3em]">
+        <div className="mb-2 inline-flex items-center gap-3 text-[length:var(--fs-symbol)] uppercase tracking-[0.3em]">
           {/* <span>{data.tagline}</span>
           <span aria-hidden="true">•</span> */}
-          <span className='font-hieroglyphs'>{data.symbol}</span>
+          <span className="font-hieroglyphs">{data.symbol}</span>
         </div>
-        <div className="space-y-5 text-3xl leading-[1.1] text-[color:var(--muted)] drop-shadow-[0_0_28px_#F8B8E08C] [text-shadow:0_0_24px_#F8B8E073]">
+        <div className="space-y-5 text-[length:var(--fs-body)] leading-[1.25] text-[color:var(--text)] drop-shadow-[var(--text-drop-shadow)] [text-shadow:var(--text-shadow)]">
           {data.paragraphs.map((paragraph) => (
             <p
               key={paragraph}
-              className="[&_a]:text-[color:var(--accent)] [&_a]:underline [&_a]:underline-offset-4 [&_a]:transition [&_a]:duration-200 [&_a]:[text-shadow:none] hover:[&_a]:text-[color:var(--ink)]"
+              className="first:w-[80%] mx-auto  [&_a]:text-[color:var(--accent)] [&_a]:underline-none [&_a]:underline-offset-4 [&_a]:transition [&_a]:duration-200 [&_a]:[text-shadow:none] hover:[&_a]:text-[color:var(--ink)] "
               dangerouslySetInnerHTML={{ __html: paragraph }}
             />
           ))}
         </div>
 
-        <div className="mt-6 text-[1.5em]  tracking-[0.22em] drop-shadow-[0_0_28px_#F8B8E08C] [text-shadow:0_0_24px_#F8B8E073]">
+        <div className="mt-8 leading-none text-[length:var(--fs-note)] drop-shadow-[var(--text-drop-shadow)] [text-shadow:var(--text-shadow)]">
           * {data.note} *
         </div>
-        <p className="mt-0 text-[1.5em] text-[color:var(--muted)]">{data.cta}</p>
+        <p className="mt-0 text-[length:var(--fs-note)] text-[color:var(--text)] drop-shadow-[var(--text-drop-shadow)] [text-shadow:var(--text-shadow)]">
+          {data.cta}
+        </p>
 
-        <div className="mt-0 flex flex-wrap gap-3 max-sm:flex-col max-sm:items-start justify-center">
-          {data.socials.map((item) => (
-            <a
-              key={item.label}
-              href={item.href}
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2 text-[1.5em] no-underline transition duration-200 hover:-translate-y-0.5 hover:text-[color:var(--ink)] hover:border-[rgba(249,199,132,0.8)] hover:bg-[rgba(249,199,132,0.12)]"
-            >
-              {item.label}
-            </a>
+        <div className="mt-0 flex flex-wrap gap-1flex-col max-sm:items-start justify-center leading-none">
+          {data.socials.map((item, index) => (
+            <>
+              <a
+                key={item.label}
+                href={item.href}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 px-1 py-0 text-[length:var(--fs-note)] leading-none no-underline transition duration-200 hover:-translate-y-0.5 hover:text-[color:var(--ink)] hover:border-[rgba(248,184,224,0.8)] hover:bg-[rgba(248,184,224,0.12)]  drop-shadow-[var(--text-drop-shadow)] [text-shadow:var(--text-shadow)]"
+              >
+                {item.label}
+              </a>
+              {index < data.socials.length - 1 && (
+                <span className="text-[length:var(--fs-note)] drop-shadow-[var(--text-drop-shadow)] [text-shadow:var(--text-shadow)]">
+                  *
+                </span>
+              )}
+            </>
           ))}
         </div>
       </main>
